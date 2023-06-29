@@ -1,0 +1,424 @@
+
+/*
+* main.css contient les styles principale (navbar, footer, body,...)
+*/
+/***************POLICE-du-site********************/
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+@font-face {
+    font-family: 'Panthera';
+    src: url('../Fonts/PantheraRegular-MVZ9J.ttf');
+}
+@font-face {
+    font-family: 'BEYNO';
+    src: url('../Fonts/FontsFree-Net-BEYNO.ttf');
+}
+@font-face {
+    font-family: 'Wakanda_forever';
+    src: url('../Fonts/wakandaforever-regular.ttf');
+}
+/*********************animation-du-site*********************************/
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  /**************************************************************************/
+  h1,.contenue{
+    opacity: 0;
+    transform: translateX(-100%);
+    animation-name: slideIn;
+    animation-duration: 1.1s;
+    animation-fill-mode: forwards;
+  }
+  h2{
+    opacity: 0;
+    transform: translateX(-100%);
+    animation-name: slideIn;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+  }
+  p,li,span,a,.sp{
+    opacity: 0;
+    transform: translateX(-100%);
+    animation-name: slideIn;
+    animation-duration: 1.4s;
+    animation-fill-mode: forwards;
+  }
+  
+
+body{
+    background-image: url(../Images/All_pages/arrière_plan.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    font-family: 'Cantarell';
+    font-size: 16px;
+    overflow-x: hidden;
+  
+    
+    }
+
+main{
+    width: 100%;
+   
+   background-color: rgba(5, 79, 28, 0);
+    
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+main .contenaire{
+   background-color: rgba(8, 0, 255, 0);
+   height: inherit;
+   margin:0 0px;
+  
+}
+
+.contenaire>nav{
+    background-color: rgba(245, 245, 220, 0);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-right:130px;
+    padding-left: 130px;
+    
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgba(255, 0, 0, 0);
+   
+}
+.logo:hover{
+    cursor: pointer;
+    
+}
+.logo:hover>a>img{
+    filter: brightness(75%) sepia(80) saturate(15) hue-rotate(200deg);
+    
+    
+    
+}
+.contenaire>nav>ul{
+    display: flex;
+    gap: 35px;
+    font-family:'BEYNO';
+    color: white;
+}
+.contenaire>nav>ul>li:hover{
+    color:#9e91b7 ;
+}
+nav>img{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+.menu{
+    background-color: #9e91b77f;
+    color: white;
+    font-size: 12px;
+    height: auto;
+    padding-bottom: 20px;
+    position: absolute;
+    right: 20px;
+    top:75px;
+    width:200px;
+    padding-top: 30px;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+    
+}
+.menu .iconss{
+    background-color: rgba(255, 228, 196, 0);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+
+nav #ouvrt{
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+nav #ferm{
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.menu>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: center;
+    
+}
+.menu>ul>li{
+    width: 100%;
+}
+.menu>ul>li>a{
+    padding: 8px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.menu>ul>li>a:hover{
+    background-color: #9e91b7;
+}
+.contenaire>nav>ul>li{
+    width: 100%;
+    
+    text-align: center;
+    padding: 10px 0;
+}
+.contenaire>nav>ul>li:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/**************************FOOTER****************************************/
+footer{
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    padding: 40px 0;
+    background-image: url(../Images/All_pages/back_footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    gap: 20px;
+
+}
+.content_foot{
+    display: flex;
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    background-color: rgba(11, 106, 230, 0);
+    padding: 40px 0;
+}
+.marvel{
+    background-image: url(../Images/All_pages/footer1.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 260px;
+    height: 300px;
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   cursor: pointer;
+   transition: transform 0.5s ease-in-out;
+    
+}
+.marvel:hover{
+    transform: scale(1.1);
+    
+}
+.marvel>img{
+    
+   width: 110px;
+   height: auto;
+    background-color: rgba(128, 0, 0, 0);
+    margin-bottom: 10px;
+}
+.left_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    justify-content:start ;
+    height: inherit;
+    background-color: rgba(50, 188, 142, 0);
+    width: 600px;
+    
+}
+.info{
+    display: flex;
+    align-items: start;
+    justify-content:start;
+    background-color: rgba(44, 33, 16, 0);
+    width: auto;
+    
+    
+
+}
+.info h2{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 0, 0, 0);
+
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 15%;
+}
+.socio{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.page_list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.page_list>a:hover{
+    text-decoration:underline;
+    
+}
+.text_footer{
+    display: flex;
+    gap:25px;
+    margin-bottom:20px;
+    background-color: rgba(250, 235, 215, 0);
+}
+.text_footer>ul{
+    display: flex;
+    list-style: circle;
+    gap: 25px;
+}
+.icon>a>img{
+    transition: transform 0.2s ease-in-out;
+}
+.icon>a>img:hover{
+    transform: scale(1.1);
+}
+/*********************float bar left********************************************/
+.bar_content{
+    display: flex;
+    position: fixed;
+    left:20px;
+    top:0px;
+    background-color: #3d2da600;
+
+}
+.lign1{
+    height: 330px;
+    border-left: solid 3px #9e91b7;
+    
+}
+.bt1{
+height: 100%;
+}
+.bt1 .lign2{
+    height: 160px;
+    border-right: solid 3px #9e91b7;
+    
+
+}
+
+.boit_icone{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    position: relative;
+    left: 7px;
+    gap: 13px;
+    margin-top: 25px;
+    background-color: #9e91b700;
+
+}
+.boit_icone>a>img:hover{
+    filter: brightness(200%) hue-rotate(0deg);
+}
+/*****************************************************/
+@media screen and (max-width:1000px){
+    /**************************************/
+    footer{
+        
+        background-color: rgba(255, 0, 0, 0);
+        color: rgba(0, 0, 0, 0);
+        padding: 20px 0;
+    }
+    .content_foot{
+        flex-wrap: wrap;
+        gap: 55px;
+    }
+    .left_footer{
+        align-items: center;
+        gap: 80px;
+    }
+    .info{
+        flex-direction: row;
+        
+        gap:30px;
+    }
+    .info h2{
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+    .text_footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon>a{
+        height: 35px;
+        width: auto;
+       
+    }
+    .marvel{
+       width: 170px;
+        height: 200px;
+    }
+    .marvel>img{
+        width: 80px;
+        
+    }
+  
+    .page{
+        margin-right: 10%;
+    }
+    /*********************************************************/
+    nav>img{
+        display: block;
+        background-color: #9e91b700;
+    }
+    nav #ouvrt{
+        display: block;
+    }
+    nav #ferm{
+        display: none;
+    }
+    .contenaire>nav{
+        padding: 0 20px;
+    }
+    .contenaire>nav>ul{
+        display: none;
+    }
+    
+}
+/***********************************************************/

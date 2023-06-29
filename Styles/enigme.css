@@ -1,0 +1,277 @@
+/***IMPORTATION du style principale*/
+@import url(main.css);
+
+/************couleur_selection_menu_page********************/
+.contenaire>nav>ul>li:nth-of-type(3){
+    color:#9e91b7 ;
+    text-decoration: underline;
+}
+/**********************welcome******************************/
+.welcome{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url("../Images/Enigme/Pantherenigme1.png");
+    background-repeat: no-repeat;
+    background-size:1000px;
+    background-position-y:70% ;
+    background-position-x:5% ;
+    padding: 0;
+    width: 100%;
+    height: 590px;
+}
+   
+.text_left{
+    width:600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5%;
+    
+    
+   
+    /*background-color: azure;*/
+}
+.text_left h1{
+    font-family: 'BEYNO';
+    font-size: 43px;
+    color:#9e91b7 ;
+}
+.text_left>h1:nth-of-type(1){
+    letter-spacing: 1.8px;
+}
+
+.text_left .circl p{
+    font-size: 10px;
+    width:300px;
+    text-align: justify;
+    margin: 18px 0;
+    color: white;
+    background-color: rgba(63, 39, 2, 0);
+    width: 65%;
+}
+.text_left .lin{
+    width: 600px;
+    position: relative;
+    right:-80px;
+    border-bottom: 2px solid #9e91b727;
+    background-color: rgba(116, 167, 211, 0);
+    
+}
+.circl{
+    background-image: url(../Images/Enigme/Pantherenigme2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(5, 34, 34, 0);
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+
+.welcome img{
+    width: auto;
+    height: auto; 
+    overflow: hidden;
+    background-color: rgba(127, 255, 212, 0);
+    margin-left: 200px;
+    
+}
+
+/**********************************BIO*****************/
+.bio{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 800px;
+    gap:60px;
+    padding-left: 260px;
+    padding-right: 100px;
+    background-color: rgba(87, 87, 9, 0);
+}
+.bio>h2{
+    font-size: 25px;
+    font-family: Wakanda_forever;
+    color: #9e91b7;
+    width: 50%;
+    background-color: rgba(255, 228, 196, 0);
+}
+.content_case{
+    display: flex;
+    background-color: rgba(255, 0, 0, 0);
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+}
+.case_left{
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(255, 140, 0, 0);
+    
+    justify-content: space-between;
+    width:330px;
+    font-size: 12px;
+}
+.case_left_up>p:nth-of-type(2)>span{
+    font-family: "Wakanda_forever";
+    text-transform: uppercase;
+    background-color: rgba(0, 255, 255, 0);
+    font-size: 16px;
+}
+.case_left_up>p:nth-of-type(2){
+    text-transform: uppercase;
+    width: 100%;
+    
+}
+.case_left_up>p:nth-of-type(1){
+    margin-bottom: 15px;
+}
+.case_left_up{
+    width: 330px;
+    margin-bottom: 40px;
+}
+
+.case_left_down>form{
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(139, 69, 19, 0);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap:40px;
+    height: auto;
+    width:330px;
+   
+    
+}
+.case_left_down>form>.in>input[type="text"]{
+    width: 100%;
+    border-radius: 50px;
+    border: solid #9e91b7 2px;
+    padding: 8px 20px;
+    margin-top: 10px;
+}
+.case_left_down>form>.in>input[type="text"]::placeholder{
+    color: #9e91b7;
+}
+
+.case_left_down>form>input[type="button"]{
+    width: 100px;
+    background-color:#9e91b7;
+    text-align: center;
+    border: none;
+    font-size: 10px;
+    box-shadow:0 0 30px #02174000;
+    cursor: pointer;
+    color: #021740;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 8px 20px;
+    
+}
+
+.case_left_down>form>input[type="button"]:hover{
+    box-shadow:0 0 30px #9e91b7;
+}
+.circl2{
+    background-image: url(../Images/Enigme/Pantherenigme2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(5, 47, 47, 0);
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+.circl2>p{
+    font-size: 10px;
+    width:300px;
+    text-align: center;
+    margin: 18px 0;
+    color: white;
+    background-color: rgba(63, 39, 2, 0);
+    width: 65%;
+    
+}
+/**********************************************************************/
+@media screen and (max-width:1000px){
+    .bio{
+        flex-wrap: wrap;
+        padding: 0 10px;
+        align-items: center;
+        
+    }
+    .bio>h2{
+        width: 330px;
+        align-items: center;
+        font-size: 22px;
+        text-align: center;
+    }
+    .case_left{
+         width:330px;
+    }
+    .case_left_up>p:nth-of-type(1){
+        width: auto;
+    }
+    .textuel{
+       
+        padding: 20px 7%;
+    }
+    .bar_content{
+        display: none;
+    }
+    .content_case{
+        width: 50%;
+        justify-content: center;
+    }
+    .circl2{
+        width: 350px;
+        height: 190px;
+        margin-left: 0px;
+    }
+    .lin{
+        display: none;
+    }
+    /*************************************************/
+
+    .circl{
+        width: 350px;
+        height: 190px;
+        margin-left: 0px;
+
+    }
+    .text_left .circl>p{
+        text-align:center;
+        
+    }
+    .text_left{
+        margin:0;
+        margin-top: 250px;
+        
+    }
+    .text_left h1{
+        font-size: 32px;
+        
+    }
+    .welcome{
+        background-size: 700px;
+        background-position: 40% 1000%;
+    }
+}
+/****************************************************************************/

@@ -1,0 +1,193 @@
+/***IMPORTATION du style principale*/
+
+@import url(main.css);
+/************couleur_selection_menu_page********************/
+.contenaire>nav>ul>li:nth-of-type(2){
+    color:#9e91b7 ;
+    text-decoration: underline;
+}
+
+/*
+* Changement de couleur du liste selon la page
+**/
+body{
+    background-image: url(../Images/All_pages/arrière_plan.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    font-family: 'Cantarell';
+    font-size: 16px;
+    overflow-x: hidden;
+    /*background: radial-gradient(#11213f 100%,#0b0b0b 100%,#021740 83.76%, #021740 0%);*/
+    
+    }
+
+/*main{
+    /*width: 100%;
+   background-color: rgba(0, 255, 255, 0);
+    
+    height: auto;
+    margin: 0 auto;
+}
+main .contenaire{
+   background-color: rgba(81, 0, 255, 0);
+   height: auto;
+   margin:0 0px;
+}
+
+.contenaire>nav{
+    
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    padding-right:130px;
+    padding-left: 130px;
+    
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.contenaire>nav>ul{
+    display: flex;
+    gap: 35px;
+    font-family:'BEYNO';
+    color: white;
+}
+.contenaire>nav>ul>li:hover{
+    color:#9e91b7 ;
+}*/
+/**********************content_page*************************************/
+.welcome{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url("../Images/Wakanda/Pantherwakanda1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    padding: 0;
+
+    width: 100%;
+    height: 900px;
+
+    
+}
+   
+.text_left{
+    width:600px;
+    margin-left: 10%;
+   
+    /*background-color: azure;*/
+}
+.text_left h1{
+    font-family: 'BEYNO';
+    font-size: 43px;
+    color:#9e91b7 ;
+}
+.text_left h2{
+    font-family: 'Wakanda_forever';
+    font-size: 30px;
+    color:#9e91b7 ;
+}
+.text_left p{
+    font-size: 12px;
+    width:300px;
+    text-align: justify;
+    margin: 18px 0;
+    color: white;
+}
+.text_left a{
+    font-size: 12px;
+    color: white;
+    text-decoration: underline;
+}
+.welcome img{
+    width: auto;
+    height: auto; 
+    overflow: hidden;
+    background-color: rgba(127, 255, 212, 0);
+}
+/***************************bio********************************/
+.bio{
+    
+    display: flex;
+   
+    color: rgb(255, 255, 255);
+    
+    /*background-image: url("../images/Wakanda/Pantherwakanda2.png");*/
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:0 -65px;
+    
+    justify-content: space-around;
+    font-size: 12px;
+    width:100% ;
+    padding: 0 90px;
+    align-items:start;
+    
+    
+    
+   
+
+}
+.textuel{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 800px;
+    padding: 80px 50px;
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+
+
+.descriptive h2{
+    font-family: 'BEYNO';
+    font-size: 20px;
+    margin-bottom: 25px;
+    color:#9e91b7 ;
+}
+.descriptive p{
+   text-align: justify;
+   margin: 10px 0px;
+
+}
+.lien{
+    background-color: #07338c00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+    justify-content: center;
+    height: 350px;
+    width: 100%;
+}
+/*****************************************************/
+@media screen and (max-width:1000px){
+    .bio{
+        flex-wrap: wrap;
+        padding: 0 0;
+        
+    }
+    .textuel{
+       
+        padding: 20px 7%;
+    }
+    .bar_content{
+        display: none;
+    }
+    .welcome{
+        background-size: 250%;
+        background-position: -250px 90px;
+        height: 590px;
+    }
+    
+}
+/***********************************************************/

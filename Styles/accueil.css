@@ -1,0 +1,439 @@
+/***IMPORTATION du style principale*/
+@import url(main.css);
+
+/************couleur_selection_menu_page********************/
+.contenaire>nav>ul>li:nth-of-type(1){
+    color:#9e91b7 ;
+    text-decoration: underline;
+}
+
+/*
+*Changement de couleur du liste selon la page
+**/
+.welcome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    background-color: rgba(250, 235, 215, 0);
+    margin-top: 40px;
+    background-image: url(../Images/Accueil/Pantherhome1..png);
+    background-repeat: no-repeat;
+    background-position:90% 10% ;
+    padding-left: 15% ;
+    background-size: 680px;
+    width: 100%;
+    height: 580px;
+    margin-bottom: 100px;
+}
+.text_left{
+    width:600px;
+   
+    background-color: rgba(4, 44, 44, 0);
+}
+.text_left h1{
+    font-family: 'Panthera';
+    font-size: 43px;
+    color:#9e91b7 ;
+}
+.text_left h2{
+    font-family: 'BEYNO';
+    font-size: 20px;
+    color:#9e91b7 ;
+}
+.text_left p{
+    font-size: 12px;
+    width:60%;
+    text-align: justify;
+    margin: 18px 0;
+    color: white;
+}
+.text_left a{
+    font-size: 12px;
+    color: white;
+    text-decoration: underline;
+}
+.welcome img{
+    width: auto;
+    height: auto; 
+    overflow: hidden;
+    background-color: rgba(127, 255, 212, 0);
+}
+/************************Galerie*********************************/
+.galerie{
+    display: flex;
+    background-color: #07338c;
+    /*position: relative;*/
+    gap: 300px;
+    width: auto;
+
+    margin-left: 15%;
+    padding-right: 200px;
+    padding-left: 25px;
+    flex-wrap:nowrap;
+    overflow-x:hidden;
+    
+    
+}
+.C1,.C2,.C3,.C4,.C5,.C6,.C7,.C8,.C9,.C10{
+    background-color: #a62da2;
+}
+.C1{
+    transform: scale(10);
+    background-color: white;
+}
+
+.contenue{
+    display: flex;
+    background-color: #9e91b700;
+    align-items: center;
+    width: auto;
+}
+
+.galerie .contenue img{
+   /* width: 200px;
+    height: 200px;
+    */
+}
+
+.content_text{
+    color: white;
+    font-size: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+.content_text h2{
+    font-family: 'BEYNO';
+    font-size: 20px;
+    width: 300px;
+    color:#9e91b7 ;
+}
+.content_text>p{
+    width: 300px;
+    background-color: rgba(255, 0, 0, 0);
+    display:inline-block;
+    height:100px;
+    
+}
+
+.s_right{
+    width: 40px;
+    height: 40px;
+    position:absolute;
+    left:90%;
+    top:40%;
+    background-color:#021740;
+    box-shadow: white 0px 0px 25px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.s_left{
+    width: 40px;
+    height: 40px;
+    position:absolute;
+    left:25%;
+    top:40%;
+    background-color:#021740;
+    box-shadow: white 0px 0px 25px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: rotate(180deg);
+    visibility: hidden;
+}
+.contentGalerie{
+position: relative;
+background-color: #9e91b700;
+
+}
+/********************Bio************************/
+.bio{
+    margin-top: 100px;
+    display: flex;
+    
+    color: rgb(255, 255, 255);
+    background-color: rgba(250, 235, 215, 0);
+    font-size: 12px;
+    width:auto ;
+    align-items:start;
+    justify-content:space-around;
+
+}
+.textuel{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 800px;
+    margin-left: 60px;
+    background-color: rgba(172, 255, 47, 0);
+    
+}
+.graphique{
+    width: 300px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    background-color: #8461c600;
+}
+.graph_1{
+    background-color: rgb(255, 255, 255);
+    color:#021740;
+    padding: 25px;
+    border-radius: 5px;
+    height: 580px;
+}
+.graph_2{
+    background-color: rgba(254, 255, 240, 0);
+    padding-top: 80px;
+}
+.c_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    background-color: #07338c00;
+    top: -230px;
+}
+.c_content h2{
+    font-size: 20px;
+    font-weight: bold ;
+}
+.c_content .content_bt{
+  min-width: 300px;
+   display: flex;
+   justify-content: center;
+   gap:8px
+    
+}
+.content_bt>input[type="button"]
+{
+    background-color: #3d2da6;
+    border-radius: 5px;
+    color:white;
+    padding:5px 8px;
+    cursor: pointer;
+    
+}
+.sp{
+    margin-top: 8px;
+}
+.sp span{
+    font-weight:bold;
+}
+.sdet p>label{
+    
+    font-weight: bold;
+}
+.sdet p>span{
+    font-weight: 100;
+    font-size: x-small;
+}
+
+.descriptive h2{
+    font-family: 'BEYNO';
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:#9e91b7 ;
+}
+.descriptive p{
+   text-align: justify;
+   margin: 10px 0px;
+
+}
+/*******************Formulaire************************/
+.formulaire{
+    background-image: url(../Images/Accueil/Pantherhome7.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    width: 100%;
+    left:0px;
+}
+
+.content_formul{
+    width: 60%;
+    min-width: 330px;
+    height:450px ;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.245) 0%, rgb(255, 255, 255) 75%);
+    border-radius: 100px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content_formul>form>h2{
+    font-size:32px ;
+    font-weight: bold;
+    
+}
+.content_formul>form>p{
+    font-size:12px ;
+    font-weight: normal;
+    
+}
+.content_formul>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #7295dc00;
+    gap: 0px;
+}
+
+
+.content_formul>form>input{
+   margin-top: 20px;
+}
+.content_formul>form>input[type="text"],input[type="email"],input[type="submit"]{
+    width: 100%;
+    border-radius: 50px;
+    border: solid rgb(71, 71, 71) 1px;
+    padding: 8px 20px;
+}
+.content_formul form>input[name="Message"]{
+    height: 150px;
+      width: 100%;
+      border-radius: 15px;
+      text-indent: 1px;
+      padding-top: 0px;
+   
+}
+.content_formul>form>input[type="submit"]{
+    width: 100px;
+    background-color: white;
+    text-align: center;
+    border: none;
+    font-size: 10px;
+    box-shadow:0 0 30px #021740a3;
+    cursor: pointer;
+}
+.content_formul>form>input[type="submit"]:hover{
+    box-shadow:0 0 30px #fbfbfca3;
+}
+/*****************************************************************/
+@media only screen and (max-width: 2000px) and (orientation: portrait) and (pointer: coarse) and (hover: none) { 
+    
+}
+
+
+/**************************************************************************/
+.bar_content{
+    display: flex;
+    position: fixed;
+    left:20px;
+    top:0px;
+    background-color: #3d2da600;
+
+}
+.lign1{
+    height: 330px;
+    border-left: solid 3px #9e91b7;
+    
+}
+.bt1{
+height: 100%;
+}
+.bt1 .lign2{
+    height: 160px;
+    border-right: solid 3px #9e91b7;
+    
+
+}
+
+.boit_icone{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    position: relative;
+    left: 7px;
+    gap: 13px;
+    margin-top: 25px;
+    background-color: #9e91b700;
+
+}
+/*****************************************************/
+@media screen and (max-width:1000px){
+    .bio{
+        flex-wrap: wrap;
+        padding: 0 0;
+        
+    }
+    .textuel{
+       margin: 0;
+        padding: 20px 7%;
+    }
+    .bar_content{
+        display: none;
+    }
+     .text_left{
+        position: absolute;
+        width: 92%;
+        margin-top: 300px;
+
+        
+    }
+    .text_left p{
+       text-align: start;
+       width: 70%;
+    }
+    .welcome {
+        background-size:500px;
+        background-position:30% 0% ;
+    }
+    /**********************************************************/
+    .galerie{
+        flex-wrap: wrap;
+        width: auto;
+        margin-left: 0;
+        justify-content: center;
+        gap: 0px;
+    }
+    .s_right{
+        display: none;
+    }
+    .galerie .contenue img{
+        width: 100px;
+        height: 100px;
+    }
+    .graphique{
+        margin-top: 300px;
+        margin-bottom: 100px;
+    }
+    .formulaire{
+        background-size: cover;
+    }
+    .content_formul{
+        border-radius: 40px
+    }
+    .content_formul>form{
+        width: 80%;
+    }
+}
+
+
+/***********************************************************/
+@media screen and (max-width:1500px){
+   
+}

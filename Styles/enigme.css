@@ -66,12 +66,19 @@
     background-color: rgba(5, 34, 34, 0);
     width: 500px;
     height: 300px;
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
-    
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
+}
+#headWak{
+    width: 40px;
+    height: auto;
+    background-color: rgba(255, 0, 0, 0);
+    position: relative;
+    left: -90px;
 }
 
 .welcome img{
@@ -85,23 +92,42 @@
 
 /**********************************BIO*****************/
 .bio{
-    color: white;
+   color: white;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     height: 800px;
-    gap:60px;
+    gap:10px;
     padding-left: 260px;
     padding-right: 100px;
     background-color: rgba(87, 87, 9, 0);
 }
-.bio>h2{
+
+
+.bio h2{
+    font-family: "BEYNO";
+    color: #9e91b7;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.bio h2 span{
+    color: #9e91b7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+.bio p{
+    font-size: 12px;
+    width: 400px;
+}
+.case_left_up>h2{
     font-size: 25px;
     font-family: Wakanda_forever;
     color: #9e91b7;
-    width: 50%;
+    width: 100%;
+    margin-bottom: 40px;
     background-color: rgba(255, 228, 196, 0);
+    text-decoration: none;
 }
 .content_case{
     display: flex;
@@ -123,21 +149,23 @@
     width:330px;
     font-size: 12px;
 }
-.case_left_up>p:nth-of-type(2)>span{
+.circl2>p:nth-of-type(2)>span{
     font-family: "Wakanda_forever";
     text-transform: uppercase;
     background-color: rgba(0, 255, 255, 0);
-    font-size: 16px;
+    font-size: 18px;
 }
-.case_left_up>p:nth-of-type(2){
+.circl2>p:nth-of-type(2){
     text-transform: uppercase;
-    width: 100%;
+    
+    
     
 }
-.case_left_up>p:nth-of-type(1){
+.circl2>p:nth-of-type(1){
     margin-bottom: 15px;
+    font-size: 12px;
 }
-.case_left_up{
+.circl2{
     width: 330px;
     margin-bottom: 40px;
 }
@@ -193,17 +221,18 @@
     height: 300px;
     margin-top: 20px;
     margin-left: 20px;
-    
+    flex-direction: column;
     display: flex;
     color: black;
     justify-content: center;
     align-items: center;
+
 }
 .circl2>p{
     font-size: 10px;
     width:300px;
-    text-align: center;
-    margin: 18px 0;
+    text-align: start;
+    margin: 0 0;
     color: white;
     background-color: rgba(63, 39, 2, 0);
     width: 65%;
